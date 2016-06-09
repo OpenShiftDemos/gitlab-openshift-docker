@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["POSTGRESQL_DATABASE"] %>
+  pool: 10
+  username: <%= ENV["POSTGRESQL_USER"] %>
+  password: <%= ENV["POSTGRESQL_PASSWORD"] %>
+  host: <%= GITLAB_DB_HOST %>
+  port: 5432
